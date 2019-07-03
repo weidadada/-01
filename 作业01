@@ -1,1 +1,34 @@
 
+0. Can you come up out 3 sceneraies which use AI methods?
+1，只能语音客服 2，银行借贷风控系统 3，自动驾驶
+
+1. How do we use Github; Why do we use Jupyter and Pycharm;
+Github 我还不，会这两天在学习，Jupyter用于代码展示，Pycharm用于实际大一点项目开发
+
+2. What's the Probability Model?
+Ans:
+基本的概率图模型包括贝叶斯网络、马尔可夫网络和隐马尔可夫网络。
+
+3. Can you came up with some sceneraies at which we could use Probability Model?
+翻译？
+
+4. Why do we use probability and what's the difficult points for programming based on parsing and pattern match?
+probability是通过计算概率，parsing and pattern match是事先设定规则
+
+5. What's the Language Model;
+统计语言模型是一个单词序列上的概率分布，对于一个给定长度为m的序列，它可以为整个序列产生一个概率 P(w_1,w_2,…,w_m) 。其实就是想办法找到一个概率分布，它可以表示任意一个句子或序列出现的概率。
+
+6. Can you came up with some sceneraies at which we could use Language Model?
+语音识别(speech recognition) , 机器翻译(machine translation), 词性标注(part-of-speech tagging), 句法分析(parsing)等
+
+7. What's the 1-gram language model;
+该模型基于这样一种假设，第n个词的出现只与前面N-1个词相关，而与其它任何词都不相关，整句的概率就是各个词出现概率的乘积。这些概率可以通过直接从语料中统计N个词同时出现的次数得到：p(s)=p(w1)p(w2| w1)p(w3| w1w2)?p(wl| w1?wl?1)
+n=1即出现在第 i位上的词 wi独立于历史时，一元文法被记作 unigram, uni-gram, monogram
+
+8. What's the disadvantages and advantages of 1-gram language model;
+disadvantages：没有前后词性相关
+advantages：可能处理比较简单吧？
+
+9. What't the 2-gram language models;
+n=2即出现在第 i位上的词 wi，仅仅于它前一个历史词 wi?1 有关，二元文法模型被称为一阶马尔可夫链（Markov chain），记作 bigram, bi-gram；最大似然估计
+n=3即出现在第 i位上的词 wi，仅与它前面的两个历史词 wi?2、wi?1有关，三元文法模型被称为二阶马尔可夫链，记作 trigram, tri-gram
